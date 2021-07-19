@@ -1,0 +1,60 @@
+:root {
+  --primary: #303f9f;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.pagination li {
+  min-width: 30px;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+}
+
+ul.pagination li:first-child,
+ul.pagination li:last-child {
+  border: none;
+}
+
+ul.pagination li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 18px;
+}
+
+ul.pagination li.active a {
+  color: white;
+}
+ul.pagination li.active {
+  background-color: var(--primary);
+}
+
+ul.pagination li a:hover,
+ul.pagination li a.active {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.page-selection {
+  width: 48px;
+  height: 30px;
+  color: var(--primary);
+}
+
+.MuiButtonBase-root.activeView {
+  color: var(--primary);
+  cursor: auto;
+}
+
+.MuiButtonBase-root.activeView:hover {
+  background: transparent;
+}
