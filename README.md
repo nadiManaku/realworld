@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Decidion Making Process
+1. add the router from React for creating the different pages
+2. created multiple components for the test page (tabel view, list view, loader, pagination)
+3. added pagination so that not all records are shown, user can navigate to see more records
+4. additionaly user can toggle between table and list view
+5. UI Material framework is added to have consistent design
+6. the main idea for the performance was that i store the output of the performance in the Context store and show it in `Pefromance Page`, unfortunatly i could not finish the implemenataion bacause setState func added in `clockPerformance` was going in infinite loop.
+7. using `useCallback` for performance
